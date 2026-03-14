@@ -1,2 +1,51 @@
-bin/
+# =======================================
+# Compiled Java classes — should not be in Git
+# =======================================
 *.class
+
+# Build output directories (VS Code, Eclipse, IntelliJ, etc.)
+bin/
+out/
+build/
+target/
+
+# =======================================
+# VS Code local settings — not for Git
+# These files are specific to your computer.
+# =======================================
+.vscode/
+# to share recommended extensions, uncomment this:
+# !.vscode/extensions.json
+
+# =======================================
+# IntelliJ IDEA — project/workspace files
+# =======================================
+.idea/
+*.iml
+*.iws
+
+# =======================================
+# Eclipse IDE files — auto-generated, not needed
+# =======================================
+.classpath
+.project
+.settings/
+
+# =======================================
+# Log files and JVM crash dumps
+# =======================================
+*.log
+hs_err_pid*
+replay_pid*
+
+# =======================================
+# System files (Windows/macOS)
+# =======================================
+.DS_Store
+Thumbs.db
+
+# =======================================
+# Environment/secret files (if used)
+# =======================================
+.env
+*.env
