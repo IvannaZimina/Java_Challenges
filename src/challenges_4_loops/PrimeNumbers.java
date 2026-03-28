@@ -2,7 +2,7 @@
 Write a method which takes in two integer numbers and returns how many prime numbers are in a range between those two numbers.
 */
 
-package challenge.task_4_loops;
+package challenges_4_loops;
 
 import java.util.Scanner;
 

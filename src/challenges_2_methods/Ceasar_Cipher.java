@@ -7,7 +7,7 @@ in the second version some shift value is used automatically inside the method.
 For the algorithm details visit this page:https://en.wikipedia.org/wiki/Caesar_cipher
 */
 
-package challenge.task_2_methods;
+package challenges_2_methods;
 
 public class Ceasar_Cipher {
 

@@ -8,7 +8,7 @@ but there must be always at least one number, one small and one capital letter,
 and one special character.
 Use Math.random() to generate random numbers.
 */
-package challenge.task_4_loops;
+package challenges_4_loops;
 
 public class GeneratePassword {
     // need to create a password with random letters, numbers, and symbols

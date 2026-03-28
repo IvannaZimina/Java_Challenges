@@ -11,7 +11,7 @@ Both methods should return a real number or decimal value for total height in ce
 Call both methods and print out the results.
 */
 
-package challenge.task_2_methods;
+package challenges_2_methods;
 
 public class Unit_Converter {
 

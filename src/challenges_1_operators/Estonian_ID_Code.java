@@ -5,7 +5,7 @@
     8.–10.: seerianumber;
     11.: kontrollnumber, arvutatud kaalutud algoritmi abil; */
 
-package challenge.task_1_operators;
+package challenges_1_operators;
 // ülesandest: Saad sellest meetodi teha, kui see sulle mugav on.
 public class Estonian_ID_Code {
     private static int mod11Weighted(String id, int[] weights) {

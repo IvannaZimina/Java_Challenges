@@ -10,7 +10,7 @@ Display a message in each case block, with the letter and the NATO word, then br
 Add a default block, which displays the letter with a message saying not found.
 */
 
-package challenge.task_3_switch;
+package challenges_3_switch;
 
 import java.util.Scanner;
 

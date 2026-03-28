@@ -1,4 +1,4 @@
-package challenge.task_1_operators;
+package challenges_1_operators;
 public class operators {
     public static void main(String[] args) {
         // Step 1: create a double variable with a value of 20.00.

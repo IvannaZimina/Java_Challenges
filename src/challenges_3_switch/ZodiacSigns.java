@@ -4,7 +4,7 @@ Use the enhanced switch statement as an expression.
 Write 3 different versions of the method using method overloading for different ways to pass in a date.
 */
 
-package challenge.task_3_switch;
+package challenges_3_switch;
 
 // import statements for date handling and user input
 import java.time.LocalDate;

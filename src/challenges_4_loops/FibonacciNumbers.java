@@ -5,7 +5,7 @@ https://en.wikipedia.org/wiki/Fibonacci_sequence
 from wiki:
 and 𝐹𝑛 = 𝐹𝑛 − 1 + 𝐹𝑛 − 2 for n > 1.
 */
-package challenge.task_4_loops;
+package challenges_4_loops;
 
 public class FibonacciNumbers {
     public static void main(String[] args) {

@@ -3,7 +3,7 @@ Write a method,which takes in an int variable with an exam score and
 returns a grade from“A”to“F”according to a European university grade system.
 */
 
-package challenge.task_2_methods;
+package challenges_2_methods;
 
 // W3 docs: The Scanner class is used to get user input, and it is found in the java.util package.
 import java.util.Scanner;

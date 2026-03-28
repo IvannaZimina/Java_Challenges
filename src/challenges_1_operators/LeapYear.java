@@ -1,4 +1,4 @@
-package challenge.task_1_operators;
+package challenges_1_operators;
 public class LeapYear {
     // Can make it a method, if you feel comfortable doing so.
 

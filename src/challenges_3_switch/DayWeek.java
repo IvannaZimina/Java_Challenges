@@ -10,7 +10,7 @@ Print both the day variable and the dayOfTheWeek variable.
 In the main method, call this method for the values 0 through 7.
 */
 
-package challenge.task_3_switch;
+package challenges_3_switch;
 
 public class DayWeek {
 

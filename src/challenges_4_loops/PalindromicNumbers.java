@@ -6,7 +6,7 @@ isPalindrome(1221) → should return true
 isPalindrome(11212) → should return false
 
 */
-package challenge.task_4_loops;
+package challenges_4_loops;
 
 public class PalindromicNumbers {
 

@@ -5,7 +5,7 @@ Use the enhanced switch statement as an expression.
 Write two versions of the method using method overloading for phone numbers in a String and a Long formats.
 */
 
-package challenge.task_3_switch;
+package challenges_3_switch;
 
 public class PhoneNumbers {
 
