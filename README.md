@@ -20,33 +20,11 @@ Java_Challenges/
 |- src/
 |  |- App.java
 |  |- challenges_1_operators/
-|  |  |- Estonian_ID_Code.java
-|  |  |- LeapYear.java
-|  |  |- operators.java
 |  |- challenges_2_methods/
-|  |  |- Barking_Dog.java
-|  |  |- Bite_Coverter.java
-|  |  |- Ceasar_Cipher.java
-|  |  |- Exam_Grade.java
-|  |  |- Seconds_And_Minutes.java
-|  |  |- Unit_Converter.java
 |  |- challenges_3_switch/
-|  |  |- CurrencyRates.java
-|  |  |- DayWeek.java
-|  |  |- PhoneNumbers.java
-|  |  |- PhoneticAlphabet.java
-|  |  |- ZodiacSigns.java
-|  |- challenges_4_loops/
-|  |  |- DigitSum.java
-|  |  |- FibonacciNumbers.java
-|  |  |- GeneratePassword.java
-|  |  |- PalindromicNumbers.java
-|  |  |- PrimeNumbers.java
 |  |- challenges_5_exceptions/
-|     |- Calculator.java
-|     |- InvalidNumbers.java
-|     |- MinimumMaximumNumbers.java
-|     |- TextBasedAdventureGame.java
+|  |- challenges_6_Classes/
+|  |- challenges_...
 |- bin/              (compiled classes)
 |- lib/              (external libraries, if any)
 |- .vscode/
