@@ -12,6 +12,19 @@ Create an array of these objects and loop through the array executing all parent
 
 package challenges_11_polymorphism;
 
-public class Cars {
+public class Main {
+    public static void main(String[] args) {
+        Car[] cars = new Car[] {
+            new FuelPoweredCar("Toyota Corolla", "Gasoline", 50),
+            new ElectricCar("Tesla Model 3", 85),
+            new HybridCar("Toyota Prius", "Gasoline", 40, 60)
+        };
 
+        for (Car c : cars) {
+            System.out.println("=== " + c.getDescription() + " (" + c.getClass().getSimpleName() + ") ===");
+            c.startEngine();
+            c.drive();
+            System.out.println();
+        }
+    }
 }
