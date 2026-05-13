@@ -12,5 +12,51 @@ Create several instances of the Carpet class in your main method with different 
 package challenges_7_Static;
 
 public class CarpetCostCalculator {
+	public static void main(String[] args) {
+		// set price per square meter
+		Carpet.squareMeterCost = 8.0;
 
+		Carpet c1 = new Carpet(12, 10);
+		Carpet c2 = new Carpet(5.5, 4.2);
+		Carpet c3 = new Carpet(-3, 7); // negative width -> treated as 0
+
+		printCarpetInfo(c1);
+		printCarpetInfo(c2);
+		printCarpetInfo(c3);
+	}
+
+	private static void printCarpetInfo(Carpet c) {
+		System.out.printf("Carpet (%.2fm x %.2fm): area=%.2fm^2, total cost=%.2feuro%n",
+				c.getWidth(), c.getLength(), c.getArea(), c.getTotalCost());
+	}
+}
+
+
+class Carpet {
+	private double width;
+	private double length;
+
+	// cost per square meter (shared for all carpets)
+	public static double squareMeterCost;
+
+	public Carpet(double width, double length) {
+		this.width = width < 0 ? 0 : width;
+		this.length = length < 0 ? 0 : length;
+	}
+
+	public double getWidth() {
+		return width;
+	}
+
+	public double getLength() {
+		return length;
+	}
+
+	public double getArea() {
+		return width * length;
+	}
+
+	public double getTotalCost() {
+		return getArea() * squareMeterCost;
+	}
 }
