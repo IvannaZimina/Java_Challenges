@@ -47,5 +47,11 @@ public class MethodReferences {
 		String last = new StringBuilder(first).reverse().toString();
 		return s + " " + last;
 	}
-
 }
+
+// ===== output =====
+// ANNA M. ANNA (len=12)
+// BOB M. BOB (len=10)
+// CHARLIE M. EILRAHC (len=18)
+// DAVID M. DIVAD (len=14)
+// EVE M. EVE (len=10)
