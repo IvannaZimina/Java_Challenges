@@ -3,6 +3,7 @@ package challenges_24_terminal_operations;
 import java.time.Year;
 import java.time.YearMonth;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
@@ -106,14 +107,34 @@ public class Student {
 
         Student s = new Student(id, country, yearEnrolled, ageAtEnrollment, gender, hasProg);
 
-        // For each course, call watchLecture with a random lecture number, and activity year and month
-        for (Course c : courses) {
-            // choose a random months offset up to 60 months ago for activity
-            int monthsAgo = rnd.nextInt(61);
-            YearMonth activity = YearMonth.now().minusMonths(monthsAgo);
-            s.addCourse(c, activity);
-            int lecture = rnd.nextInt(c.getLectureCount() + 1);
-            s.watchLecture(c.getCode(), lecture, activity);
+        // Change per tasks:
+        // - select a random number and random selection of courses (at least one course)
+        // - use a minimum lecture of 30 when choosing a random lecture
+        if (courses != null && courses.length > 0) {
+            // choose how many courses this student will take (1..courses.length)
+            int take = 1 + rnd.nextInt(courses.length);
+            // pick `take` unique courses by shuffling indices
+            List<Integer> idx = new java.util.ArrayList<>();
+            for (int i = 0; i < courses.length; i++) idx.add(i);
+            java.util.Collections.shuffle(idx, rnd);
+            for (int i = 0; i < take; i++) {
+                Course c = courses[idx.get(i)];
+                int monthsAgo = rnd.nextInt(61);
+                YearMonth activity = YearMonth.now().minusMonths(monthsAgo);
+                s.addCourse(c, activity);
+                // choose lecture between minLecture (30) and lectureCount
+                int minLecture = Math.min(30, Math.max(0, c.getLectureCount()));
+                int lecture;
+                if (c.getLectureCount() <= 0) {
+                    // course without lecture count: random small number
+                    lecture = 0;
+                } else {
+                    int start = Math.min(30, c.getLectureCount());
+                    int range = c.getLectureCount() - start + 1;
+                    lecture = start + (range > 0 ? rnd.nextInt(range) : 0);
+                }
+                s.watchLecture(c.getCode(), lecture, activity);
+            }
         }
 
         return s;

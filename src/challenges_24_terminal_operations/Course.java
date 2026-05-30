@@ -12,6 +12,12 @@ public final class Course {
         this.lectureCount = lectureCount;
     }
 
+    // Overloaded constructor: allow creating a course without specifying lecture count
+    // from task: You don't have to pass a lecture count for this one.
+    public Course(String code, String title) {
+        this(code, title, 0);
+    }
+
     public String getCode() {
         return code;
     }
